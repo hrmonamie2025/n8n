@@ -2,7 +2,7 @@ services:
   - type: web
     name: n8n-bot
     env: docker
-    repo: https://github.com/ТВОЙ_АККАУНТ/РЕПОЗИТОРИЙ
+    repo: https://github.com/hrmonamie2025
     dockerfilePath: Dockerfile
     branch: main
     plan: free
