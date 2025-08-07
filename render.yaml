@@ -19,3 +19,30 @@ services:
 	 			value: https://n8n-sdz4.onrender.com
 			- key: N8N_EDITOR_BASE_URL
 	 			value: https://n8n-sdz4.onrender.com		 
+
+
+services:
+  - type: web
+    name: n8n-bot
+    env: docker
+    repo: https://github.com/hrmonamie2025/n8n
+    dockerfilePath: Dockerfile
+    branch: main
+    plan: free
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: "hrmonamie2025"
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "123456789Monamie$$$$$"
+      - key: N8N_ENCRYPTION_KEY
+        value: "yourStrongKey123"
+      - key: WEBHOOK_URL
+        value: "https://n8n-sdz4.onrender.com"
+      - key: N8N_EDITOR_BASE_URL
+        value: "https://n8n-sdz4.onrender.com"
+      - key: N8N_HOST
+        value: "0.0.0.0"
+      - key: N8N_PORT
+        value: "5678"
