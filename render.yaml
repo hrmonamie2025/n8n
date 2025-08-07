@@ -2,7 +2,7 @@ services:
   - type: web
     name: n8n-bot
     env: docker
-    repo: https://github.com/hrmonamie2025
+    repo: https://github.com/hrmonamie2025/n8n
     dockerfilePath: Dockerfile
     branch: main
     plan: free
@@ -10,8 +10,12 @@ services:
       - key: N8N_BASIC_AUTH_ACTIVE
         value: true
       - key: N8N_BASIC_AUTH_USER
-        value: admin
+        value: hrmonamie2025
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: yourpassword
-      - key: N8N_ENCRYPTION_KEY
+        value: 123456789Monamie$$$$$
+      - key: 123456789Monamie
         value: yourStrongKey123
+			- key: WEBHOOK_URL
+	 			value: https://n8n-sdz4.onrender.com
+			- key: N8N_EDITOR_BASE_URL
+	 			value: https://n8n-sdz4.onrender.com		 
