@@ -4,5 +4,7 @@ ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=yourpassword
 ENV N8N_ENCRYPTION_KEY=yourStrongKey123
+ENV WEBHOOK_URL=https://n8n-sdz4.onrender.com
+ENV N8N_EDITOR_BASE_URL=https://n8n-sdz4.onrender.com
 
 EXPOSE 5678
