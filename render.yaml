@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: n8n-bot
+    env: docker
+    repo: https://github.com/ТВОЙ_АККАУНТ/РЕПОЗИТОРИЙ
+    dockerfilePath: Dockerfile
+    branch: main
+    plan: free
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: yourpassword
+      - key: N8N_ENCRYPTION_KEY
+        value: yourStrongKey123
