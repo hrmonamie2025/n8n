@@ -6,6 +6,10 @@ ENV N8N_BASIC_AUTH_PASSWORD=123456789Monamie$$$$$
 ENV N8N_ENCRYPTION_KEY=123456789Monamie$$$$$
 ENV WEBHOOK_URL=https://n8n-sdz4.onrender.com
 ENV N8N_EDITOR_BASE_URL=https://n8n-sdz4.onrender.com
-ENV N8N_PORT=1000
-ENV PORT=1000
-EXPOSE 5678
+ENV N8N_HOST=0.0.0.0
+ENV N8N_PORT=10000
+
+# Порт указывать не нужно
+# EXPOSE 5678
+
+CMD ["n8n"]
