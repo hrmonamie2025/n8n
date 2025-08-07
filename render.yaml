@@ -14,7 +14,7 @@ services:
       - key: N8N_BASIC_AUTH_PASSWORD
         value: "123456789Monamie$$$$$"
       - key: N8N_ENCRYPTION_KEY
-        value: "yourStrongKey123"
+        value: "123456789Monamie$$$$$"
       - key: WEBHOOK_URL
         value: "https://n8n-sdz4.onrender.com"
       - key: N8N_EDITOR_BASE_URL
