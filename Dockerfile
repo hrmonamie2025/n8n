@@ -1,4 +1,4 @@
-FROM n8nio/n8n:192.2
+FROM n8nio/n8n:latest
 
 ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
 
