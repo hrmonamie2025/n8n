@@ -1,4 +1,5 @@
 FROM n8nio/n8n:latest
+RUN apk add --no-cache bash
 
 # Включаем проверку прав на конфиг
 ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
