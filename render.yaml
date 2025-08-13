@@ -23,13 +23,10 @@ services:
         value: "0.0.0.0"
       - key: N8N_PORT
         value: "5678"
+      - key: PORT
         value: "1000"
-			- key: PORT
-	 			value: "1000"
       - key: N8N_USER_FOLDER
-        value: /opt/render/n8n
+        value: "/opt/render/n8n"
     disk:
-      name: n8n-data
       mountPath: /opt/render/n8n
       sizeGB: 1
-    plan
